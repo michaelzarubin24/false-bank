@@ -40,7 +40,7 @@ while (isRunning) {
 
     case "B":
       // Perform new scum operation (implementation can be customized)
-      newScumOperation();
+      newScumOperation("A new scum operation has been performed!");
       break;
 
     case "C":
@@ -93,9 +93,9 @@ function userData(userName, userCard, cardDate, userCVV) {
   };
 }
 
-// Function to perform a new scum operation (you can customize this function)
-function newScumOperation() {
-  alert("A new scum operation has been performed!");
+// Function to perform a new scum operation
+function newScumOperation(msg) {
+  alert(msg);
 }
 
 // Function to show an error message using an alert
